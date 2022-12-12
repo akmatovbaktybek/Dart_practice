@@ -32,7 +32,7 @@ void main() {
   }
 
   // 3 задание
-  String lang = 'en';
+  String lang = 'ru';
   List ruArray = [
     'Понедельник',
     'Вторник',
@@ -52,8 +52,10 @@ void main() {
   List arr = [];
 
   if (lang == 'ru') {
-    arr.addAll(ruArray);
+    print('Вы выбрали русский язык');
+    arr.add(ruArray);
   } else if (lang == 'en') {
+    print('You have chosen English');
     arr.add(engArray);
   }
   print(arr);
