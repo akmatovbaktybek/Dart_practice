@@ -11,7 +11,6 @@ void main() {
   List secondArr = [55, 11, 23, 56, 78, 1, 9];
 
   List thirdArr = firstArr + secondArr;
-  List nextArr = 
 
   print(thirdArr);
 
@@ -59,7 +58,7 @@ void main() {
   print(array2.contains(myDart.toLowerCase()));
 
 // 7 задание
-  List array3 =  ["I", "Started", "Learn", "Flutter", "Since", "April"];
+  List array3 = ["I", "Started", "Learn", "Flutter", "Since", "April"];
   String myFlutter = array3.join('*');
 
   print(myFlutter);
