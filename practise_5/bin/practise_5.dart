@@ -48,22 +48,22 @@ void main() {
   print('Первый элемент массива: $firstElem');
 
   // 7 задание
-    bool boolValue = false;
-    if (boolValue == true) {
-      print('Ваша переменная имеет значение: $boolValue');
+  bool boolValue = false;
+  if (boolValue == true) {
+    print('Ваша переменная имеет значение: $boolValue');
+  } else {
+    print('Ваша переменная имеет значение: $boolValue');
+  }
+
+  // 8 задание
+  showValue(var number) {
+    if (number <= 0) {
+      return true;
     } else {
-      print('Ваша переменная имеет значение: $boolValue');
+      return false;
     }
+  }
 
-    // 8 задание
-    showValue(var number) {
-      if(number <= 0) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-    var value = showValue(-34);
-    print('Результат: $value');
+  var value = showValue(-34);
+  print('Результат: $value');
 }
