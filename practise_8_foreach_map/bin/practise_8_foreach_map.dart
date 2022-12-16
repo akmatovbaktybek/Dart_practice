@@ -33,6 +33,7 @@ void main(List<String> arguments) {
   }
 
   // 4 задание
+  // ВАРИАНТ С ВВЕДЕНИЕМ ЧИСЛА С КЛАВИАТУРЫ СДЕЛАЮ ПОЗЖЕ
 // print('Четвертое задание');
 //   String userNumber? = int.tryParse(stdin.readLineSync());
 //   int sum = 0;
