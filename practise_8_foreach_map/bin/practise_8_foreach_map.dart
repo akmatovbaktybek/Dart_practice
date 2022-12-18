@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(List<String> arguments) {
   // 1 задание
 
@@ -12,6 +14,8 @@ void main(List<String> arguments) {
     return e * e;
   }).toList()}');
 
+  print('');
+
   // 2 задание
 
   List reversedArr = [for (int i = 5; i >= 1; i--) i];
@@ -25,30 +29,26 @@ void main(List<String> arguments) {
     return e * e;
   }).toList()}');
 
+  print('');
+
   // 3 задание
 
   print('Третье задание');
   for (int i = 1; i <= 9; i++) {
     print('$i * 3 = ${i * 3}');
   }
+  print('');
 
   // 4 задание
-  // ВАРИАНТ С ВВЕДЕНИЕМ ЧИСЛА С КЛАВИАТУРЫ СДЕЛАЮ ПОЗЖЕ
-// print('Четвертое задание');
-//   String userNumber? = int.tryParse(stdin.readLineSync());
-//   int sum = 0;
-
-//   for (int i = 1; i <= userNumber; i++) {
-//     sum +=int.tryParse(userNumber);
-//   }
-
-//   print('Вы ввели $userNumber, результат: $sum');
 
   print('Четвертое задание');
-  int userNumber = 5;
+  print('Введите число:');
+  String? userNumber = stdin.readLineSync();
+  int number = int.parse(userNumber!);
+
   int sum = 0;
 
-  for (int i = 1; i <= userNumber; i++) {
+  for (int i = 1; i <= number; i++) {
     sum += i;
   }
 
