@@ -10,11 +10,11 @@ void main(List<String> args) {
   print('Вы ввели: $numDay');
 
   void getDecade(int a) {
-    if (a <= 10) {
+    if (a <= 10 && a > 0) {
       print('Этот день находится в первой декаде');
-    } else if (a <= 20) {
+    } else if (a <= 20 && a > 10) {
       print('Этот день находится во второй декаде');
-    } else if (a <= 31) {
+    } else if (a <= 31 && a > 20) {
       print('Этот день находится в третьей декаде');
     } else {
       print('Нужно ввести число от 1 до 31!!!');
