@@ -4,6 +4,7 @@ void main(List<String> arguments) {
   kyrgyzstan.getInfo();
 
   // второе задание
+
   Car toyota = Car(
       power: 275,
       color: 'Черный',

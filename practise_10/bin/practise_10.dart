@@ -1,21 +1,40 @@
-// import 'dart:math';
-import 'dart:io';
+import 'dart:math';
+// import 'dart:io';
 
 void main(List<String> arguments) {
   // Первое задание
-  print('Первое задание');
-  print('Введите число:');
-  String userNumber = stdin.readLineSync() ?? '123';
-  String getReversedUserNumber(String userNum) {
-    String userNumList = userNumber.split('').reversed.join();
-    return userNumList;
-  }
+  // print('Первое задание');
+  // print('Введите число:');
+  // String userNumber = stdin.readLineSync() ?? '123';
+  // String getReversedUserNumber(String userNum) {
+  //   String userNumList = userNumber.split('').reversed.join();
+  //   return userNumList;
+  // }
 
-  final result = getReversedUserNumber(userNumber);
-  print('Результат: $result');
-  print('');
+  // final result = getReversedUserNumber(userNumber);
+  // print('Результат: $result');
+  // print('');
 
 // Второе задание не выполнено
+
+  // List lisOfNum = [1, 2, 5, 2, 6, 9, 0];
+
+  // List getMaxNum(List a) {
+  //   List max = [2];
+
+  //   for (int i = 0; i <= a.length; i++) {
+  //     if (max[i] > 0) {
+  //       print('Элемент больше 2');
+  //     } else {
+  //       print('чзх');
+  //     }
+  //   }
+  //   return max;
+  // }
+
+  // List maxElem = getMaxNum(lisOfNum);
+
+  // print('Максимальное число в ряде чисел $lisOfNum: $maxElem');
 
   // print('Введите число');
   // int userFib = int.parse(stdin.readLineSync()!);
@@ -24,7 +43,7 @@ void main(List<String> arguments) {
   //   List listUserNum = fibonacci.toString().split('');
   //   List max = [0];
   //   for (int i = 0; i < listUserNum.length; i++) {
-      // print(int.parse(listUserNum[i]).runtimeType);
+  // print(int.parse(listUserNum[i]).runtimeType);
   //     if (int.parse(listUserNum[i]) > max[i]) {
   //       int.parse(max) = int.parse(listUserNum[i]);
   //     }
@@ -36,42 +55,42 @@ void main(List<String> arguments) {
   // print('Result $resultFibonacci');
 
   //  Третье задание
-  print('Третье задание');
-  print('Введите число');
-  String userSeriesNumbers = stdin.readLineSync() ?? '123';
+  // print('Третье задание');
+  // print('Введите число');
+  // String userSeriesNumbers = stdin.readLineSync() ?? '123';
 
-  int getSumOfNumbers(String userSerNum) {
-    int? userNum = int.tryParse(userSerNum);
-    int sum = 0;
-    for (int i = 1; i <= userNum!; i++) {
-      sum += i;
-    }
-    return sum;
-  }
+  // int getSumOfNumbers(String userSerNum) {
+  //   int? userNum = int.tryParse(userSerNum);
+  //   int sum = 0;
+  //   for (int i = 1; i <= userNum!; i++) {
+  //     sum += i;
+  //   }
+  //   return sum;
+  // }
 
-  int resultUserSeriesNum = getSumOfNumbers(userSeriesNumbers);
-  print('Сумма чисел: $resultUserSeriesNum');
-  print('');
+  // int resultUserSeriesNum = getSumOfNumbers(userSeriesNumbers);
+  // print('Сумма чисел: $resultUserSeriesNum');
+  // print('');
 
   // 4 задание
-  print('Введите число');
-  int userFib = int.parse(stdin.readLineSync()!);
+  // print('Введите число');
+  // int userFib = int.parse(stdin.readLineSync()!);
 
-  List getFibonacci(fibonacciNum) {
-    List result = [0, 1];
+  // List getFibonacci(fibonacciNum) {
+  //   List result = [0, 1];
 
-    for (int i = 2; i <= fibonacciNum; i++) {
-      int prevNum1 = result[i - 1];
-      int prevNum2 = result[i - 2];
+  //   for (int i = 2; i <= fibonacciNum; i++) {
+  //     int prevNum1 = result[i - 1];
+  //     int prevNum2 = result[i - 2];
 
-      result.add(prevNum1 + prevNum2);
-    }
+  //     result.add(prevNum1 + prevNum2);
+  //   }
 
-    return result;
-  }
+  //   return result;
+  // }
 
-  List fibonArray = getFibonacci(userFib);
-  print('Ряд чисел Фибоначчи $fibonArray');
+  // List fibonArray = getFibonacci(userFib);
+  // print('Ряд чисел Фибоначчи $fibonArray');
 }
 
 
